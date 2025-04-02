@@ -21,14 +21,14 @@ Plotly.newPlot('radar-plot', [
       gridstyle: 'dot'           // Dotted green grid lines
     },
     angularaxis: {
-      range: [0, 180],           // Angles from 0 to 180 degrees
+      range: [0, 180],           // Angles from 0 to 180 degrees for semi-circle
       tick0: 0,
       dtick: 22.5,               // Angular ticks every 22.5 degrees
       gridcolor: 'green',
       gridwidth: 1,
       gridstyle: 'dot',
-      direction: 'clockwise',    // Matches radar sweep direction
-      rotation: 90               // 0° at left (west)
+      direction: 'clockwise',    // Sweep moves from left (0°) to right (180°)
+      rotation: 90               // 0° at left, 90° up, 180° right
     }
   },
   plot_bgcolor: 'black',         // Plot background
