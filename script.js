@@ -28,7 +28,7 @@ Plotly.newPlot('radar-plot', [
       gridwidth: 1,
       gridstyle: 'dot',
       direction: 'clockwise',    // Matches radar sweep direction
-      rotation: 0               // 0° at left (west)
+      rotation: 90               // 0° at left (west)
     }
   },
   plot_bgcolor: 'black',         // Plot background
