@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensor Dashboard</title>
+  <!-- Include Plotly.js from CDN -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .input-container {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .plot-container {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    #radar-plot {
+      height: 400px;
+    }
+    #ir-plot, #dht-plot {
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sensor Dashboard</h1>
+  <div class="input-container">
+    <label for="arduino-ip">Arduino IP: </label>
+    <input type="text" id="arduino-ip" placeholder="e.g., 172.27.160.170">
+    <button onclick="setIP()">Set IP</button>
+  </div>
+  <div id="radar-plot" class="plot-container"></div>
+  <div id="ir-plot" class="plot-container"></div>
+  <div id="dht-plot" class="plot-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
